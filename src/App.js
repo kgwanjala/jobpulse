@@ -16,7 +16,11 @@ export default function App() {
       <Intro2 />
       <Intro3 />
       <Promo />
-      <Footer />
+      <Footer
+        firstname="Geoffrey"
+        lastname="Wanjala"
+        occupation="Senior Developer"
+      />
     </div>
   );
 }
