@@ -1,3 +1,10 @@
-export default function Heading() {
-  return <h1>This is my first component with functions</h1>;
+export default function Heading(props) {
+  return (
+    <div>
+      <h1>Welcome </h1>
+      <p>
+        Hello {props.firstname} {props.lastname}
+      </p>
+    </div>
+  );
 }

@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div>
       <Nav />
-      <Heading />
+      <Heading firstname="Geoffrey" lastname="Wanjala" />
       <Intro1 />
       <Intro2 />
       <Intro3 />
