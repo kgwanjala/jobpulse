@@ -6,6 +6,7 @@ import Intro2 from "./components/Intro2";
 import Intro3 from "./components/Intro3";
 import Promo from "./components/Promo";
 import Footer from "./components/Footer";
+import Card from "./components/Card";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
         lastname="Wanjala"
         occupation="Senior Developer"
       />
+      <Card h2="First card is h2" h3="First card is h3" />
+      <Card h2="Second card is h2" h3="Second card is h3" />
+      <Card h2="Third card is h2" h3="Third card is h3" />
     </div>
   );
 }
