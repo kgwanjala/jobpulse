@@ -1,4 +1,4 @@
-//importin components
+//importing components
 import Heading from "./components/Heading";
 import Nav from "./components/Nav";
 import Intro1 from "./components/Intro1";
@@ -12,6 +12,7 @@ import Modetoggler from "./components/Modetoggler";
 import Randomnumber from "./components/Randomnumber";
 import Tarehe from "./components/Tarehe";
 import InputComponent from "./components/InputComponent";
+import InputRegistrationForm from "./components/InputRegistrationForm";
 
 export default function App() {
   const date = new Date();
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <div>
+      <InputRegistrationForm />
       <InputComponent />
       <Tarehe message={date.toLocaleTimeString()} climate={weather} />
       <Randomnumber />
