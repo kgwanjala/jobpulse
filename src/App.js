@@ -8,10 +8,14 @@ import Promo from "./components/Promo";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
 import Btn from "./components/Btn";
+import Modetoggler from "./components/Modetoggler";
+import Randomnumber from "./components/Randomnumber";
 
 export default function App() {
   return (
     <div>
+      <Randomnumber />
+      <Modetoggler />
       <Btn />
       <Nav />
       <Heading firstname="Geoffrey" lastname="Wanjala" />
