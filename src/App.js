@@ -13,6 +13,7 @@ import Randomnumber from "./components/Randomnumber";
 import Tarehe from "./components/Tarehe";
 import InputComponent from "./components/InputComponent";
 import InputRegistrationForm from "./components/InputRegistrationForm";
+import PropDrilling from "./components/PropDrilling";
 
 export default function App() {
   const date = new Date();
@@ -20,6 +21,7 @@ export default function App() {
 
   return (
     <div>
+      <PropDrilling msg="I passed through the Header and the Wrapper and I reached the Button component" />
       <InputRegistrationForm />
       <InputComponent />
       <Tarehe message={date.toLocaleTimeString()} climate={weather} />
