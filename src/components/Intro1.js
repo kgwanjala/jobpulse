@@ -9,7 +9,7 @@ export default function Intro1() {
           I've completed the React Basics course and I'm happy to annoucen that
           I'm a Junior React Developer
         </p>
-        <p classname="link">Read more...</p>
+        <p className="link">Read more...</p>
       </div>
     </div>
   );
