@@ -7,10 +7,12 @@ import Intro3 from "./components/Intro3";
 import Promo from "./components/Promo";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
+import Btn from "./components/Btn";
 
 export default function App() {
   return (
     <div>
+      <Btn />
       <Nav />
       <Heading firstname="Geoffrey" lastname="Wanjala" />
       <Intro1 />

@@ -9,7 +9,7 @@ export default function Intro2() {
           In this blog post, I'll list 10 reasons why I love to work as a
           fron-end developer.
         </p>
-        <p classname="link">Read more...</p>
+        <p className="link">Read more...</p>
       </div>
     </div>
   );
