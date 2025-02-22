@@ -11,6 +11,7 @@ import Btn from "./components/Btn";
 import Modetoggler from "./components/Modetoggler";
 import Randomnumber from "./components/Randomnumber";
 import Tarehe from "./components/Tarehe";
+import InputComponent from "./components/InputComponent";
 
 export default function App() {
   const date = new Date();
@@ -18,6 +19,7 @@ export default function App() {
 
   return (
     <div>
+      <InputComponent />
       <Tarehe message={date.toLocaleTimeString()} climate={weather} />
       <Randomnumber />
       <Modetoggler />
