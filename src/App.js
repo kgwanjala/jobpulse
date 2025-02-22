@@ -10,10 +10,15 @@ import Card from "./components/Card";
 import Btn from "./components/Btn";
 import Modetoggler from "./components/Modetoggler";
 import Randomnumber from "./components/Randomnumber";
+import Tarehe from "./components/Tarehe";
 
 export default function App() {
+  const date = new Date();
+  const weather = "Snowing";
+
   return (
     <div>
+      <Tarehe message={date.toLocaleTimeString()} climate={weather} />
       <Randomnumber />
       <Modetoggler />
       <Btn />
