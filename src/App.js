@@ -1,4 +1,6 @@
 //importing components
+
+import { useState } from "react";
 import Heading from "./components/Heading";
 import Nav from "./components/Nav";
 import Intro1 from "./components/Intro1";
@@ -14,13 +16,27 @@ import Tarehe from "./components/Tarehe";
 import InputComponent from "./components/InputComponent";
 import InputRegistrationForm from "./components/InputRegistrationForm";
 import PropDrilling from "./components/PropDrilling";
+import Fruits from "./components/Fruits";
+import FruitsCounter from "./components/FruitsContainer";
 
 export default function App() {
+  const [fruits] = useState([
+    { fruitName: "apple", id: 1 },
+    { fruitName: "mango", id: 2 },
+    { fruitName: "plum", id: 3 },
+  ]);
+
   const date = new Date();
   const weather = "Snowing";
 
   return (
     <div>
+      <div className="fruit">
+        <h1>Where should the state go?</h1>
+        <Fruits fruits={fruits} />
+        <FruitsCounter fruits={fruits} />
+      </div>
+
       <PropDrilling msg="I passed through the Header and the Wrapper and I reached the Button component" />
       <InputRegistrationForm />
       <InputComponent />
