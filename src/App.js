@@ -18,6 +18,11 @@ import InputRegistrationForm from "./components/InputRegistrationForm";
 import PropDrilling from "./components/PropDrilling";
 import Fruits from "./components/Fruits";
 import FruitsCounter from "./components/FruitsContainer";
+import { Routes, Route, Link } from "react-router-dom";
+import Articles from "./pages/Articles";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Homepage from "./pages/Homepage";
 
 export default function App() {
   const [fruits] = useState([
@@ -45,6 +50,14 @@ export default function App() {
       <Modetoggler />
       <Btn />
       <Nav />
+
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Articles" element={<Articles />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+
       <Heading firstname="Geoffrey" lastname="Wanjala" />
       <Intro1 />
       <Intro2 />
