@@ -54,6 +54,16 @@ export default function App() {
   }
   //end conditional rendering
 
+  const song = new Audio("./assets/CrazyForYou.mp3");
+
+  function togglesong() {
+    if (song.paused) {
+      song.play();
+    } else {
+      song.pause();
+    }
+  }
+
   return (
     <div>
       <div className="fruit">
@@ -61,8 +71,14 @@ export default function App() {
         <Fruits fruits={fruits} />
         <FruitsCounter fruits={fruits} />
       </div>
-      <ReactPlayer url="https://www.youtube.com/watch?v=hXxq-WSIahY" />
-      <ReactPlayer url="https://www.youtube.com/watch?v=MFqqMUHVTSI" />
+
+      <button onClick={togglesong}>Play Song</button>
+
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=MFqqMUHVTSI"
+        playing={false}
+        volume={0.5}
+      />
       <img height={200} src={logo} alt="Logo" />
       <PropDrilling msg="I passed through the Header and the Wrapper and I reached the Button component" />
       <InputRegistrationForm />
