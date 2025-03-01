@@ -1,7 +1,7 @@
 //importing components
 
 import logo from "./assets/engineering.jpg";
-
+import ReactPlayer from "react-player/youtube";
 import { useState } from "react";
 import Heading from "./components/Heading";
 import Nav from "./components/Nav";
@@ -61,9 +61,9 @@ export default function App() {
         <Fruits fruits={fruits} />
         <FruitsCounter fruits={fruits} />
       </div>
-
+      <ReactPlayer url="https://www.youtube.com/watch?v=hXxq-WSIahY" />
+      <ReactPlayer url="https://www.youtube.com/watch?v=MFqqMUHVTSI" />
       <img height={200} src={logo} alt="Logo" />
-
       <PropDrilling msg="I passed through the Header and the Wrapper and I reached the Button component" />
       <InputRegistrationForm />
       <InputComponent />
@@ -72,18 +72,15 @@ export default function App() {
       <Modetoggler />
       <Btn />
       <Nav />
-
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/Articles" element={<Articles />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-
       <div>
         <CurrentMessage />
       </div>
-
       <Heading firstname="Geoffrey" lastname="Wanjala" />
       <Intro1 />
       <Intro2 />
