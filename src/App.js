@@ -34,6 +34,24 @@ export default function App() {
   const date = new Date();
   const weather = "Snowing";
 
+  //start conditional rendering
+  function Workdays() {
+    return <h1>Get it done!!</h1>;
+  }
+
+  function Weekends() {
+    return <h1>Get some rest</h1>;
+  }
+
+  function CurrentMessage() {
+    const day = new Date().getDay();
+    if (day >= 1 && day <= 5) {
+      return <Workdays />;
+    }
+    return <Weekends />;
+  }
+  //end conditional rendering
+
   return (
     <div>
       <div className="fruit">
@@ -57,6 +75,10 @@ export default function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+
+      <div>
+        <CurrentMessage />
+      </div>
 
       <Heading firstname="Geoffrey" lastname="Wanjala" />
       <Intro1 />
