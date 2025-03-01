@@ -1,5 +1,7 @@
 //importing components
 
+import logo from "./assets/engineering.jpg";
+
 import { useState } from "react";
 import Heading from "./components/Heading";
 import Nav from "./components/Nav";
@@ -59,6 +61,8 @@ export default function App() {
         <Fruits fruits={fruits} />
         <FruitsCounter fruits={fruits} />
       </div>
+
+      <img height={200} src={logo} alt="Logo" />
 
       <PropDrilling msg="I passed through the Header and the Wrapper and I reached the Button component" />
       <InputRegistrationForm />
